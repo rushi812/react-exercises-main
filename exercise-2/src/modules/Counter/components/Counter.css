@@ -1,0 +1,33 @@
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: 'Roboto';
+  font-size: 84px;
+  color: #37474f;
+}
+
+.buttons-container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons-container button {
+  cursor: pointer;
+  background: #5e19f5;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-size: 32px;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+}
+
+.disableBtn {
+  background-color: #5f19f52f !important;
+  cursor: not-allowed !important;
+  border: none !important;
+}

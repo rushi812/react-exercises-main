@@ -1,0 +1,20 @@
+.countinent-container {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.countinent-container input {
+  text-transform: uppercase;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 2px solid gray;
+  background-color: #f1f1f1;
+}
+
+.continent-details p {
+  font-size: 1.2rem;
+}

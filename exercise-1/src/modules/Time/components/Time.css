@@ -1,0 +1,8 @@
+.timeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 84px;
+  color: #37474f;
+}

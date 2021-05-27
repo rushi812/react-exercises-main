@@ -1,0 +1,51 @@
+{
+  "name": "exercise3",
+  "description": "A react app which shows list of countries using GraphQL.",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "webpack serve --config webpack/webpack.config.js --env env=development",
+    "build": "webpack --config webpack/webpack.config.js --env env=production",
+    "server": "nodemon server.js",
+    "test": "jest --watchAll --env=jsdom"
+  },
+  "author": "Rushiraj Brahmbhatt",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.3.19",
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.8",
+    "@types/react-dom": "^17.0.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "graphql": "^15.5.0",
+    "html-webpack-plugin": "^5.3.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.1",
+    "jsdom": "^16.6.0",
+    "nodemon": "^2.0.7",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^27.0.1",
+    "typescript": "^4.3.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  }
+}
